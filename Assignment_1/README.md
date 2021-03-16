@@ -1,4 +1,4 @@
-# Assignment 1 - k-Nearest Neighbours (k-NN) and Linear Regression Algorithm
+# k-Nearest Neighbours (k-NN) and Linear Regression Algorithm
 
 ## Q1) k-NN Algorithm for Regression
 
