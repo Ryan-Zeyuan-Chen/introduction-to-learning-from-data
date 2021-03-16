@@ -2,7 +2,11 @@
 
 ## Q1) k-NN Algorithm for Regression
 
-The k-NN algorithm is implemented for regression with two different distance metrics (l<sub>2</sub> and l<sub>1</sub>). The nearest neighbours are computed using a brute-force approach. The distance metrics are implemented through `l2_dist(x_train, x_test)` and `l1_dist(x_train, x_test)`, which can be alternated in `knn_regressor(x_train, y_train, x_test, k)`. The value of `k` is estimated using 5-fold cross-validation to minimize the root-mean-square error (RMSE) loss.
+The k-NN algorithm is implemented for regression with two different distance metrics (l<sub>2</sub> and l<sub>1</sub>). The nearest neighbours are computed using a brute-force approach.
+
+The distance metrics are implemented through `l2_dist(x_train, x_test)` and `l1_dist(x_train, x_test)`, which can be alternated in `knn_regressor(x_train, y_train, x_test, k)`.
+
+The value of `k` is estimated using 5-fold cross-validation to minimize the root-mean-square error (RMSE) loss.
 
 The algorithm is applied to the `mauna_loa` dataset and the estimated `k` value is reported. The cross-validation RMSE and test RMSE values are presented as well.
 
@@ -10,7 +14,11 @@ For this model, The cross-validation loss across `k` and prediction on the test 
 
 ## Q2) k-NN Algorithm for Classification
 
-The k-NN algorithm is implemented for classification with two different distance metrics (l<sub>2</sub> and l<sub>1</sub>). The nearest neighbours are computed using a brute-force approach. The distance metrics are implemented through `l2_dist(x_train, x_test)` and `l1_dist(x_train, x_test)`, which can be alternated in `knn_classifier(x_train, y_train, x_test, k)`. The value of `k` is estimated by maximizing the accuracy (fraction of correct predictions) on the validation split.
+The k-NN algorithm is implemented for classification with two different distance metrics (l<sub>2</sub> and l<sub>1</sub>). The nearest neighbours are computed using a brute-force approach.
+
+The distance metrics are implemented through `l2_dist(x_train, x_test)` and `l1_dist(x_train, x_test)`, which can be alternated in `knn_classifier(x_train, y_train, x_test, k)`.
+
+The value of `k` is estimated by maximizing the accuracy (fraction of correct predictions) on the validation split.
 
 The algorithm is applied to the `iris` dataset and the estimated `k` value is reported. The validation accuracy and test accuracy are also presented.
 
