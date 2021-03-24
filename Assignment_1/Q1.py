@@ -66,7 +66,7 @@ if __name__ == "__main__":
     v_rmse = []
     for i in range(30):
         v_rmse.append([i+1, knn_validate(x_train, y_train, i+1, 5)])
-        print('k =', v_rmse[i][0], "RMSE =", v_rmse[i][1])
+        print('k =', v_rmse[i][0], "\tRMSE =", v_rmse[i][1])
     nv_rmse = np.array(v_rmse)
     graph_loss(nv_rmse[:,0], nv_rmse[:,1])
     v_rmse.sort(key=lambda x: x[1])

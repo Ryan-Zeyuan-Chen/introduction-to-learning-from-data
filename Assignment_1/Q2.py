@@ -34,7 +34,7 @@ if __name__ == "__main__":
     v_accuracy = []
     for i in range(30):
         v_accuracy.append((i+1, knn_validate(x_train, y_train, x_valid, y_valid, i+1)))
-        print('k =', v_accuracy[i][0], "Accuracy =", v_accuracy[i][1], "%")
+        print('k =', v_accuracy[i][0], "\tAccuracy =", v_accuracy[i][1], "%")
     v_accuracy.sort(reverse = True, key=lambda x: x[1])
     k = v_accuracy[0][0]
     print('\nThe estimated k value is', k, 'and the maximum validation accuracy is', v_accuracy[0][1], "%\n")
